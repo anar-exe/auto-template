@@ -1,11 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="app.js" defer></script>
+    <script src="https://kit.fontawesome.com/0dfa7af1a1.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Auto</title>
 </head>
-<body>
-    
+
+<body class="no-select">
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="navbar">
+                        <div class="head">
+                            <div class="imgbox">
+                                <img src="assets/images/car1.png" alt="">
+                            </div>
+                            <h1>Best Auto</h1>
+                        </div>
+                        <nav>
+                            <a href="#home">Ana səhifə</a>
+                            <a href="">Xidmətlərimiz</a>
+                            <a href="">Haqqımızda</a>
+                            <a href="">Filiallar</a>
+                            <a href="">Qalareya</a>
+                            <a href="">Əlaqə</a>
+                            <select id="language">
+                                <option value="" selected>AZ</option>
+                                <option value="">TR</option>
+                                <option value="">EN</option>
+                                <option value="">RU</option>
+                            </select>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 d-flex align-items-center">
+                    <div class="textbox">
+                        <h1>Best Auto</h1>
+                        <h3>Keyfiyyətin ünvanı</h3>
+                        <p>Best Auto olaraq, müasir avtomobil dünyasının ən son yeniliklərini sizə təqdim edirik.
+                            Məqsədimiz – hər bir müştərimizə ehtiyacına uyğun, təhlükəsiz və komfortlu nəqliyyat
+                            vasitəsi təklif etməkdir.
+                            <br><br>
+                            Keyfiyyətə, dürüst xidmətə və müştəri məmnuniyyətinə əsaslanan fəaliyyətimizlə avtomobil
+                            seçimini daha asan və daha etibarlı edirik.
+                        </p>
+                        <button class="contact-button">Bizimlə Əlaqə</button>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="imgbox">
+                        <img src="assets/images/merc.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center">
+                    <div class="textbox">
+                        <h2>Xidmətlərimiz</h2>
+                        <p>Best Auto olaraq, müştərilərimizə etibarlı, peşəkar və yüksək keyfiyyətli avto xidmətlər
+                            təqdim edirik. Təcrübəli komandamız hər bir detallı diqqətlə analiz edir və avtomobiliniz
+                            üçün ən optimal həlləri təmin edir.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6 col-md-4">
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa-solid fa-dollar-sign"></i>
+                        </div>
+                        <div class="text">
+                            <h4>Avtomobil Satışı</h4>
+                            <h5>Müxtəlif marka və modellərdə yeni və işlənmiş avtomobilləri sizə ən yaxşı şərtlərlə
+                                təqdim edirik. Hər büdcəyə və ehtiyaca uyğun geniş seçim imkanı yaradırıq.</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa-solid fa-dollar-sign"></i>
+                        </div>
+                        <div class="text">
+                            <h4>Texniki Baxış və Diaqnostika</h4>
+                            <h5>Peşəkar ustalarımız avtomobilinizin tam diaqnostikasını aparır, texniki problemləri
+                                sürətlə və dəqiq şəkildə müəyyənləşdirir.</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa-solid fa-dollar-sign"></i>
+                        </div>
+                        <div class="text">
+                            <h4>Servis və Təmir Xidməti</h4>
+                            <h5>Mühərrik, transmissiya, elektrik sistemi və digər hissələr üzrə yüksək keyfiyyətli
+                                servis xidməti təqdim edirik. Orijinal ehtiyat hissələri ilə təhlükəsizliyi təmin
+                                edirik.</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa-solid fa-dollar-sign"></i>
+                        </div>
+                        <div class="text">
+                            <h4>Detailing və Təmizlik</h4>
+                            <h5>Avtomobilinizin daxili və xarici görünüşünü yeniləyən premium detailing və dərin
+                                təmizləmə xidmətlərimizlə maşınınızı təzə kimi edirik.</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa-solid fa-dollar-sign"></i>
+                        </div>
+                        <div class="text">
+                            <h4>Ehtiyat Hissələri</h4>
+                            <h5>Etibarlı və orijinal ehtiyat hissələrinin satışı ilə avtomobiliniz üçün uzunmüddətli
+                                davamlılıq təmin edirik.</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4">
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa-solid fa-dollar-sign"></i>
+                        </div>
+                        <div class="text">
+                            <h4>Yol Yardımı</h4>
+                            <h5>24/7 fəaliyyət göstərən operativ yol yardımı xidməti ilə yolda qalmağınızın qarşısını
+                                alırıq. Evakuator və yerində kiçik təmir xidmətləri mövcuddur.</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>
