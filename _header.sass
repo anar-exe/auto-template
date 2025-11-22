@@ -1,4 +1,6 @@
 header
+    position: relative
+    z-index: 999
     .navbar
         position: fixed
         top: 20px
@@ -9,8 +11,11 @@ header
         border-radius: 53px
         opacity: 0.8
         padding: 8px
+        left: 50%
+        transform: translateX(-50%) scale(0.96)
         width: 100%
-        max-width: 1296px
+        max-width: 1350px
+        transition: 0.3s
         .head
             background-color: #EDE7DD
             border-radius: 45px
@@ -31,8 +36,8 @@ header
                 padding: 10px
                 margin-right: 5px
         nav
-            // display: flex
-            // align-items: center
+            display: flex
+            align-items: center
             a
                 font-size: 20px
                 margin-right: 20px
@@ -52,3 +57,22 @@ header
                 &:hover
                     color: #2A1F0A
                     background-color: #EDE7DD
+        .menu
+            display: none
+            background-color: #EDE7DD
+            border-radius: 5px
+            color: #2A1F0A
+            padding: 25px
+            font-size: 40px
+            border-radius: 45px
+    .scroll
+        position: fixed
+        top: -3px
+        border-radius: 0 0 53px 53px
+        transition: 0.3s
+    @media ( max-width: 992px )
+        .navbar
+            nav
+                display: none
+            .menu
+                display: block
